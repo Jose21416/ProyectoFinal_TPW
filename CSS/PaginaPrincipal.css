@@ -17,3 +17,9 @@
     text-align: center;
 
 }
+
+.contenido-logo {
+    width: 400px; 
+    height: auto;
+    display: block;
+  }
