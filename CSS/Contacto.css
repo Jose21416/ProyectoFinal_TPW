@@ -1,8 +1,8 @@
 .map-container {
   position: relative;
   width: 100%;
-  max-width: 800px; /* ancho máximo opcional */
-  height: 450px;    /* alto del mapa */
+  max-width: 1500px; /* ancho máximo opcional */
+  height: 100vh;    /* alto del mapa */
   margin: 0 auto;   /* centrar */
 }
 
