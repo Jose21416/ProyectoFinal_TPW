@@ -1,25 +1,293 @@
+/* ============ ESTILOS GENERALES ============ */
 * {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header-nav{
-
-    text-align: right;
-
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
 }
 
-.textos-header{
+/* ============ HEADER ============ */
+header {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Images/bannersolocolor.png") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    text-align: center;
+/* NAVBAR */
+.header-nav {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+}
 
+.header-nav .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contenido-logo {
-    width: 400px; 
-    height: auto;
-    display: block;
-  }
+  height: 50px;
+}
+
+.header-nav .button {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.header-nav .button:hover {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+/* ===== HERO BANNER ===== */
+.hero-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto; /* resto del header con nav */
+  padding: 0 25%;
+  color: white;
+}
+
+.hero-text {
+  max-width: 800px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  animation: slideIn 2s ease-in-out;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  animation: slideIn 2.5s ease-in-out;
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bolsadorada {
+  height: 600px;
+  animation: bounce 3s infinite;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* ============ SECCIÓN QUIÉNES SOMOS ============ */
+.contenido-quienessomos {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.contenido_quienessomos_titulo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.contenido_quienessomos_resumen {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* ============ SERVICIOS ============ */
+.servicios {
+  padding: 4rem 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.servicios-contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.servicio {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: transform 0.3s;
+}
+
+.servicio:hover {
+  transform: translateY(-10px);
+}
+
+.servicio img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* ============ BENEFICIOS ============ */
+.beneficios {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.beneficios h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.beneficios-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+/* ============ TESTIMONIOS ============ */
+.testimonios {
+  background: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonios-contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.testimonios blockquote {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  font-style: italic;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonios cite {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+/* ============ CTA ============ */
+.cta {
+  background: linear-gradient(to right, #ffd700, #ffae00);
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #000;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-cta:hover {
+  background: #333;
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.content-foo h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.content-foo p,
+.content-foo a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.titulo-final {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #888;
+}
