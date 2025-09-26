@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d9d9d9; /* Fondo plomo */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.content {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #5a2d82;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.logo span {
+  color: #5a2d82;
+}
+
+h2 {
+  color: #5a2d82;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Secciones */
+.clientes-wrapper,
+.instituciones,
+.exito,
+.testimonios,
+.faq,
+.blog {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Grids */
+.instituciones-grid,
+.casos-grid,
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas */
+.card {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Animación suave */
+}
+
+.card h3,
+.card h4 {
+  margin-top: 0;
+  color: #5a2d82;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Efecto hover en tarjetas */
+.card:hover {
+  transform: translateY(-8px); /* Se levanta */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+  background: #fdfdfd;
+}
+
+/* FAQ */
+.faq details {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq summary {
+  font-weight: bold;
+  color: #5a2d82;
+}
+
+.faq details:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog */
+.blog ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog li {
+  margin: 10px 0;
+}
+
+.blog a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.blog a:hover {
+  color: #5a2d82;
+}
