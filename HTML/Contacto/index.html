@@ -10,10 +10,11 @@
 </head>
 
 <body>
+    <!-------HEADER-------->
     <header>
         <nav class="header-nav">
             <div class="content">
-                <a class="button" href="../PaginaPrincipal/index.html">
+                <a class="button-logo" href="../PaginaPrincipal/index.html">
                     <img class="contenido-logo" src="../../Images/logosinfondo.png" alt="Sektorista">
                 </a>
                 <a class="button" href="../Clientes/index.html">Clientes</a>
@@ -23,77 +24,65 @@
         </nav>
     </header>
 
-    <main>
-        <div class="content">
-            <h1 class="logo">Forma de <span>Contactarnos</span></h1>
-            <div class="contact-wrapper animated bounceInUp">
-                <div class="contact-form">
-                    <h3>Completar formulario</h3>
-                    <form action="">
-                        <p>
-                            <label>Nombre y Apellido</label>
-                            <input type="text" name="fullname" required />
-                        </p>
-                        <p>
-                            <label>Correo</label>
-                            <input type="email" name="email" required />
-                        </p>
-                        <p>
-                            <label>Número de celular</label>
-                            <input type="tel" name="phone" required />
-                        </p>
-                        <p>
-                            <label>Número opcional</label>
-                            <input type="text" name="affair" />
-                        </p>
-                        <p class="block">
-                            <label>Mensaje</label>
-                            <textarea name="message" rows="3" required></textarea>
-                        </p>
-                        <p class="block">
-                            <button>ENVIAR</button>
-                        </p>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <h4>MÁS INFORMACIÓN</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i>(UBICACION GOOGLE MAPS)</li>
-                        <li><i class="fas fa-phone"></i> (Número telefónico de la empresa)</li>
-                        <li><i class="fas fa-envelope-open-text"></i>Sektorista.com</li>
-                    </ul>
-                    <p>
-                        Si tienes alguna duda o quieres mejor asesoramiento y resolver tus
-                        dudas, contactanos y nos pondremos en contacto contigo
-                    </p>
-                    <p>Sektorista.com</p>
-                </div>
-            </div>
+    <main class="contenido-ayudaycontacto">
+        <div class="contenido-ayudaycontacto-contenedor">
+            <h1 class="contenido-ayudaycontacto-titulo">¿Necesitas ayuda o quieres hablar con nosotros?</h1>
+            <p class="contenido-ayudaycontacto-resumen">
+                Aquí podrás encontrar nuestra ubicación, así como los medios de contacto directo, incluyendo WhatsApp, para que nos escribas fácilmente y te brindemos el soporte que necesitas.</p>
         </div>
-        <section class="ubicacion">
-            <div class="title-map"><h2>Punto de Atención</h2></div>
-            <div class="map-container">
-                <!-- Google Maps Embed -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.7312926895115!2d-76.97138736781554!3d-12.194116264599575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9a26836ac01%3A0x4fd233c0d43ca479!2sUniversidad%20Tecnol%C3%B3gica%20del%20Per%C3%BA%20UTP!5e0!3m2!1ses-419!2spe!4v1758084135288!5m2!1ses-419!2spe"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-
-                <!-- Tarjeta flotante -->
-                <aside class="info-card">
-                    <h3>Oficina</h3>
-                    <p>Av. Carlos Villarán N° 140, Lima</p>
-                    <p>L a V: 9:00am - 6:00pm/Sab: 9:00am - 1:00pm</p>
-                    <a href="https://www.google.com/maps/search/?api=1&query=-12.194116,-76.971387" target="_blank"
-                        class="btn">Cómo llegar</a>
-                </aside>
-            </div>
-        </section>
     </main>
+    <section class="contenido-ubicacion">
+        <div class="contenido-ubicacion-contenedor">
+            <h3 class="contenido-ubicacion-titulo">Punto de Atención</h3>
+        </div>
+        <div class="map-container">
+            <!-- Google Maps Embed -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.7312926895115!2d-76.97138736781554!3d-12.194116264599575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9a26836ac01%3A0x4fd233c0d43ca479!2sUniversidad%20Tecnol%C3%B3gica%20del%20Per%C3%BA%20UTP!5e0!3m2!1ses-419!2spe!4v1758084135288!5m2!1ses-419!2spe"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="../../JavaScript/Contacto.js"></script>
+            <!-- Tarjeta flotante -->
+            <aside class="info-card">
+                <h3>Oficina</h3>
+                <p>Av. Carlos Villarán N° 140, Lima</p>
+                <p>L a V: 9:00am - 6:00pm/Sab: 9:00am - 1:00pm</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=-12.194116,-76.971387" target="_blank"
+                    class="btn">Cómo llegar</a>
+            </aside>
+        </div>
+    </section>
+    <section>
+        <div class="contact-form">
+            <h3>Completar formulario</h3>
+            <form action="">
+                <p>
+                    <label>Nombre y Apellido</label>
+                    <input type="text" name="fullname" required />
+                </p>
+                <p>
+                    <label>Correo</label>
+                    <input type="email" name="email" required />
+                </p>
+                <p>
+                    <label>Número de celular</label>
+                    <input type="tel" name="phone" required />
+                </p>
+                <p>
+                    <label>Número opcional</label>
+                    <input type="text" name="affair" />
+                </p>
+                <p class="block">
+                    <label>Mensaje</label>
+                    <textarea name="message" rows="3" required></textarea>
+                </p>
+                <p class="block">
+                    <button>ENVIAR</button>
+                </p>
+            </form>
+        </div>
+    </section>
 
 </body>
 
