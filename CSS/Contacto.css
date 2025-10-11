@@ -70,25 +70,87 @@ body {
 }
 
 /* ============ MAPA ============ */
-.contenido-ubicacion {
+
+.ubicacion {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  position: relative;
+}
+
+.ubicacion-titulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+  padding: 2rem 0;
+}
+
+.ubicacion-mapa {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  height: 87vh;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.info-card {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  width: 400px;
+  max-width: 90%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+
+/*.ubicacion {
+  width: 100%;
+  height: 110vh;
   position: relative;
   overflow: hidden;
 }
 
-.contenido-ubicacion-titulo {
+.ubicacion-titulo {
+  padding: 2rem 1rem;
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
   color: #222;
 }
 
 .map-container {
   position: relative;
   width: 100%;
-  max-width: 1500px; /* ancho máximo opcional */
-  height: 100vh;     /* alto del mapa */
-  margin: 0 auto;    /* centrar */
+  max-width: 1500px; /* ancho máximo opcional 
+  height: 100vh;     /* alto del mapa 
+  margin: 0 auto;    /* centrar 
+  border-radius: 60px;
 }
 
 .map-container iframe {
@@ -98,15 +160,16 @@ body {
   width: 100%;
   height: 100%;
   border: 0;
+  border-radius: 10px;
 }
 
-/* Tarjeta de información */
+/* Tarjeta de información 
 .info-card {
   position: absolute;
   top: 30px;
   left: 60px;
   width: 400px;
-  max-width: 90%; /* adaptación para pantallas pequeñas */
+  max-width: 90%; /* adaptación para pantallas pequeñas 
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -116,7 +179,7 @@ body {
 
 .info-card h2 {
   margin-bottom: 10px;
-  color: #0056b3; /* más contraste */
+  color: #0056b3; /* más contraste 
 }
 
 .info-card p {
@@ -136,4 +199,4 @@ body {
 
 .btn:hover {
   background: #0056b3;
-}
+}*/
