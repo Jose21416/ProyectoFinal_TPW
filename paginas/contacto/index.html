@@ -35,28 +35,23 @@
     <section class="ubicacion">
         <h3 class="ubicacion-titulo">Punto de Atención</h3>
         <div class="ubicacion-mapa">
-            <!-- Google Maps Embed -->
-            <!--<iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.7312926895115!2d-76.97138736781554!3d-12.194116264599575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9a26836ac01%3A0x4fd233c0d43ca479!2sUniversidad%20Tecnol%C3%B3gica%20del%20Per%C3%BA%20UTP!5e0!3m2!1ses-419!2spe!4v1758084135288!5m2!1ses-419!2spe"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe> -->
+            <!-- Google Maps -->
             <div id="map"></div>
-
+            <script src="../../JavaScript/Contacto.js"></script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCapKLGiounqVHQUyNZ9eaEduuny4cm3h0&callback=initMap"></script>
             <!-- Tarjeta flotante -->
             <aside class="info-card">
                 <h2>Oficina</h2>
                 <p>Av. Carlos Villarán N° 140, Lima</p>
                 <p>L a V: 9:00am - 6:00pm/Sab: 9:00am - 1:00pm</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=-12.194116,-76.971387" 
-                    target="_blank" class="btn">Cómo llegar</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=-12.194116,-76.971387" target="_blank"
+                    class="btn">Cómo llegar</a>
             </aside>
         </div>
     </section>
-    <script src="../../JavaScript/Contacto.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCapKLGiounqVHQUyNZ9eaEduuny4cm3h0&callback=initMap"></script>
-    <section>
-        <div class="contact-form">
+    <section class="formulario">
+        <div class="formulario-contacto">
             <h3>Completar formulario</h3>
             <form action="">
                 <p>

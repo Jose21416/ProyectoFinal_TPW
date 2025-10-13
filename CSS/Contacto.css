@@ -73,7 +73,7 @@ body {
 
 .ubicacion {
   width: 100%;
-  height: 90vh;
+  height: 120vh;
   position: relative;
 }
 
@@ -128,75 +128,99 @@ body {
   background: #0056b3;
 }
 
+/* ====== SECCIÓN DEL FORMULARIO ====== */
 
-/*.ubicacion {
-  width: 100%;
-  height: 110vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.ubicacion-titulo {
-  padding: 2rem 1rem;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: #222;
-}
-
-.map-container {
-  position: relative;
-  width: 100%;
-  max-width: 1500px; /* ancho máximo opcional 
-  height: 100vh;     /* alto del mapa 
-  margin: 0 auto;    /* centrar 
-  border-radius: 60px;
-}
-
-.map-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  border-radius: 10px;
-}
-
-/* Tarjeta de información 
-.info-card {
-  position: absolute;
-  top: 30px;
-  left: 60px;
-  width: 400px;
-  max-width: 90%; /* adaptación para pantallas pequeñas 
-  background: white;
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   padding: 20px;
+}
+
+.formulario-contacto {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 100%;
+}
+
+.formulario h3 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/* ====== CAMPOS ====== */
+
+form p {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  font-size: 15px;
+  transition: all 0.3s ease;
 }
 
-.info-card h2 {
-  margin-bottom: 10px;
-  color: #0056b3; /* más contraste 
+input:focus,
+textarea:focus {
+  border-color: #0078ff;
+  box-shadow: 0 0 5px rgba(0, 120, 255, 0.2);
+  outline: none;
 }
 
-.info-card p {
-  margin-bottom: 8px;
+textarea {
+  resize: none;
+  height: 100px;
 }
 
-.btn {
-  margin-top: 12px;
-  display: inline-block;
-  padding: 10px 15px;
-  background: #007bff;
+/* ====== BOTÓN ====== */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0078ff;
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn:hover {
-  background: #0056b3;
-}*/
+button:hover {
+  background-color: #005fcc;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ====== RESPONSIVE ====== */
+
+@media (max-width: 480px) {
+  .formulario {
+    padding: 30px 20px;
+  }
+
+  .formulario h3 {
+    font-size: 20px;
+  }
+}
+
