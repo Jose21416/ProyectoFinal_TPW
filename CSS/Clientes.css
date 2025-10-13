@@ -1,31 +1,26 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #d9d9d9; /* Fondo plomo */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
   color: #333;
-}
-
-.content {
-  width: 85%;
-  margin: auto;
-  padding: 20px;
-}
-
-header {
-  width: 100%;
-  height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../imagenes/bannersolocolor.png") no-repeat center center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-color: #fafafa;
 }
 
 /* NAVBAR */
 .header-nav {
-  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 82px;
+  width: 100%;
+  background: #000815;
   padding: 1rem 2rem;
+  z-index: 1000;
 }
 
 .header-nav .content {
@@ -36,6 +31,7 @@ header {
 
 .contenido-logo {
   height: 50px;
+  cursor: pointer;
 }
 
 .header-nav .button {
