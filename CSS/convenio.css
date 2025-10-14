@@ -54,7 +54,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     max-width: 900px;
-    border-left: 6px solid #009999;
+    border-left: 6px solid black;
     border-radius: 8px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     opacity: 0;
@@ -77,8 +77,8 @@ body {
 }
 
 .informacion p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 15px;
     text-align: center;
 }
 
@@ -120,19 +120,20 @@ body {
 }
 
 .cuadro:hover{
-    background: #ffd700;
+    background: gray;
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .cuadro h3{
     margin-top: 0;
-    color:#009999;
+    color: blue;
     font-size: 18px;
     text-align: center;
 }
 
 .cuadro p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.6;
     color: #333;
@@ -147,7 +148,7 @@ body {
 
 footer{
     margin-top: 20px;
-    background-color: blue;
+    background-color: #000033;
     padding: 20px;
     text-align: center;
     border-top: 1px solid #eee;
@@ -157,5 +158,44 @@ footer p{
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.img-PrestamoLibre {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.img-CompraDeuda {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.img-PrestamoAmpliado {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.modalidades .cuadro:nth-of-type(1) {
+    animation: slideIn 1s ease-out 0.2s forwards;
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.modalidades .cuadro:nth-of-type(2) {
+    animation: slideIn 1s ease-out 0.8s forwards;
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.modalidades .cuadro:nth-of-type(3) {
+    animation: slideIn 1s ease-out 1.2s forwards;
+    opacity: 0;
+    transform: translateX(-100px);
 }
