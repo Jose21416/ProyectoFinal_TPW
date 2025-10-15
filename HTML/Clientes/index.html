@@ -12,11 +12,10 @@
 <body>
   <div class="content">
 
-    <a class="button" href="../PaginaPrincipal/index.html"> Inicio</a>
+    <a class="button" href="../PaginaPrincipal/index.html">Inicio</a>
 
-    <h1 class="logo"> <span>Nuestros Clientes</span></h1>
+    <h1 class="logo"><span>Nuestros Clientes</span></h1>
 
-    <!-- Por qué confían -->
     <div class="clientes-wrapper">
       <div class="clientes-info">
         <h3>¿Por qué confían en nosotros?</h3>
@@ -34,7 +33,6 @@
       </div>
     </div>
 
-    <!-- Donde trabajan -->
     <section class="instituciones">
       <h2>Instituciones que confían en nosotros</h2>
       <div class="instituciones-grid">
@@ -53,7 +51,6 @@
       </div>
     </section>
 
-    <!-- Casos de éxito -->
     <section class="exito">
       <h2>Casos de Éxito</h2>
       <div class="casos-grid">
@@ -68,7 +65,6 @@
       </div>
     </section>
 
-    <!-- Testimonios -->
     <section class="testimonios">
       <h2>Testimonios</h2>
       <div class="testimonios-grid">
@@ -83,7 +79,6 @@
       </div>
     </section>
 
-    <!-- FAQ -->
     <section class="faq">
       <h2>Preguntas Frecuentes</h2>
       <details>
@@ -100,17 +95,24 @@
       </details>
     </section>
 
-    <!-- Blog -->
     <section class="blog">
       <h2>Artículos de Interés</h2>
-      <ul>
-        <li><a href="#">💡 Consejos para mejorar tus finanzas personales</a></li>
-        <li><a href="#">📊 Cómo preparar tu negocio para un préstamo</a></li>
-        <li><a href="#">🏦 Inversiones seguras para principiantes</a></li>
-      </ul>
+      <h3>💡 Consejos para mejorar tus finanzas personales</h3>
+      <h3>📊 Cómo preparar tu negocio para un préstamo</h3>
+      <h3>🏦 Inversiones seguras para principiantes</h3>
     </section>
 
   </div>
-</body>
 
+  <script>
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        cards.forEach(c => c.classList.remove('selected'));
+        card.classList.add('selected');
+      });
+    });
+  </script>
+
+</body>
 </html>
