@@ -11,7 +11,6 @@ body {
   background-color: #fafafa;
 }
 
-/* NAVBAR */
 .header-nav {
   position: fixed;
   top: 0;
@@ -55,17 +54,16 @@ body {
 }
 
 .logo span {
-  color:#1100ce;
+  color:black;
 }
 
 h2 {
-  color: #1100ce;
+  color: black;
   margin-top: 40px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* Secciones */
 .clientes-wrapper,
 .instituciones,
 .exito,
@@ -79,7 +77,6 @@ h2 {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Grids */
 .instituciones-grid,
 .casos-grid,
 .testimonios-grid {
@@ -88,19 +85,18 @@ h2 {
   gap: 20px;
 }
 
-/* Tarjetas */
 .card {
   background: #fafafa;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease; /* Animación suave */
+  transition: all 0.3s ease; 
 }
 
 .card h3,
 .card h4 {
   margin-top: 0;
-  color: #870490;
+  color: blue;
 }
 
 .card span {
@@ -110,14 +106,17 @@ h2 {
   color: #555;
 }
 
-/* Efecto hover en tarjetas */
 .card:hover {
-  transform: translateY(-8px); /* Se levanta */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   background: #fdfdfd;
 }
+.card:hover {
+  background-color: grey; 
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-/* FAQ */
 .faq details {
   margin: 10px 0;
   padding: 10px;
@@ -130,7 +129,7 @@ h2 {
 
 .faq summary {
   font-weight: bold;
-  color: #5a2d82;
+  color: blue;
 }
 
 .faq details:hover {
@@ -138,7 +137,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Blog */
+
 .blog ul {
   list-style: none;
   padding: 0;
@@ -157,4 +156,13 @@ h2 {
 
 .blog a:hover {
   color: #5a2d82;
+}
+
+.sektorista-clientes {
+  display: block;
+  margin: 20px auto;
+  width: 40%;
+  border: 2px solid gold;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px gray;
 }
