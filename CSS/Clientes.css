@@ -167,3 +167,46 @@ h2 {
   border-radius: 10px;
   box-shadow: 2px 2px 8px gray;
 }
+/* EFECTO DE ENTRADA DESDE LA IZQUIERDA */
+.clientes-info,
+section,
+.sektorista-clientes {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.clientes-info {
+  animation-delay: 0.2s;
+}
+
+.instituciones {
+  animation-delay: 0.4s;
+}
+
+.exito {
+  animation-delay: 0.6s;
+}
+
+.testimonios {
+  animation-delay: 0.8s;
+}
+
+.faq {
+  animation-delay: 1s;
+}
+
+.blog {
+  animation-delay: 1.2s;
+}
+
+.sektorista-clientes {
+  animation-delay: 1.4s;
+}
