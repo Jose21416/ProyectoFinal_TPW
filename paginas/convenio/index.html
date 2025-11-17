@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convenios</title>
-    <link rel="stylesheet" href="../../css/convenio.css" />
+    <link rel="stylesheet" href="../../CSS/convenio.css" />
     <link rel="icon" href="../../imagenes/loan.png" type="image/png">
 </head>
 <body>
+    <script src="../../JavaScript/convenio.js"></script>
     <header>
         <nav class="header-nav">
             <div class="content">
@@ -20,55 +21,9 @@
             </div>
         </nav>
     </header>
-    <section class="informacion">
-        <h1>EXISTEN TRES MODALIDADES DE FINANCIAMIENTO EN LOS PRESTAMOS POR CONVENIO</h1>
-        <p>El prestamo por convenio es un tipo de prestamo con condiciones especiales orientadas a 
-            instituciones que tengan un acuerdo con ciertas entidades financieras. Cada entidad tiene 
-            diferente formas de evaluar a lo que puede influir en el monto y el descuento mensual.    
-        </p>
-        
-    </section>   
-    <hr>
-    <section class="modalidades">
-    <h2>¿Qué modalidades de préstamo por convenio existen?</h2> 
-    
-    <div class="cuadro">
-        <h3>Préstamo de libre disponibilidad</h3>
-        <p>
-            El préstamo de libre disponibilidad está dirigido a clientes que no tienen ningún descuento en sus boletas
-            por préstamo por convenio. Este tipo de préstamo se otorga como el único crédito descontado a través de la boleta
-            de pago, el dinero desembolsado lo pueden usar de manera libre para inversiones, proyectos, negocios propios, etc.
-        </p>
-        <img src = "../../imagenes/PrestamoLibre.jpg" class="img-PrestamoLibre">
-    </div>
-
-    <div class="cuadro">
-        <h3>Préstamo subrogado (Compra de deuda)</h3>
-        <p>
-            El préstamo subrogado es un tipo de préstamo que se otorga a clientes que ya tienen un préstamo por convenio
-            con otra entidad financiera. Este préstamo se usa para cancelar la deuda que se tiene con la otra entidad y 
-            así tener un solo préstamo con mejores condiciones. El dinero desembolsado se usa exclusivamente para cancelar
-            la deuda con la otra entidad financiera.
-        </p>
-        <img src = "../../imagenes/CompraDeuda.jpg" class="img-CompraDeuda">
-    </div>
-
-    <div class="cuadro">
-        <h3>Préstamo ampliado</h3>
-        <p>
-            Esta modalidad de préstamo por convenio es para financiar a clientes que ya cuentan con un préstamo por convenio 
-            vigente descontado por boleta de alguna de las diversas entidades financieras. La ampliación es un financiamiento 
-            para libre disponibilidad o compra de deuda, ya que puede ser de una modalidad mixta. La diferencia a ampliar puede 
-            ser usada para libre disponibilidad o para cancelar deuda con otra entidad financiera.     
-        </p>
-        <img src = "../../imagenes/PrestamoAmpliado.jpg" class="img-PrestamoAmpliado">
-    </div>
-    </section>
-
-    <hr>
 
     <section>
-        <h2 style="text-align:center;">Video informativo sobre préstamos por convenio</h2>
+        <h2 style="text-align:center; color: white; font-size: 1cm;">Video informativo sobre préstamos por convenio</h2>
         <div class="video-container">
             <iframe 
                 src="https://www.youtube.com/embed/5CSoWijW9d0" 
@@ -81,8 +36,69 @@
 
     <hr>
 
+    <section class="informacion">
+        <h1>EXISTEN TRES MODALIDADES DE FINANCIAMIENTO EN LOS PRESTAMOS POR CONVENIO</h1>
+        <p>El prestamo por convenio es un tipo de prestamo con condiciones especiales orientadas a 
+            instituciones que tengan un acuerdo con ciertas entidades financieras. Cada entidad tiene 
+            diferente formas de evaluar a lo que puede influir en el monto y el descuento mensual.    
+        </p>
+        
+    </section>   
+    <hr>
+    <section class="modalidades">
+    <h2>¿Qué modalidades de préstamo por convenio existen?</h2> 
+
+    <div class="slider-container">
+
+        <button class="flecha prev">❮</button>
+
+        <div class="slider">
+            <div class="slide active">
+                <div class="cuadro">
+                    <h3>Préstamo de libre disponibilidad</h3>
+                    <p>
+                        El préstamo de libre disponibilidad está dirigido a clientes que no tienen ningún descuento en sus boletas
+                        por préstamo por convenio, permitiéndoles acceder a financiamiento para diversos fines como inversiones personales,
+                        gastos imprevistos o proyectos.
+                    </p>
+                    <img src="../../imagenes/PrestamoLibre.jpg" class="img-PrestamoLibre">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="cuadro">
+                    <h3>Préstamo subrogado (Compra de deuda)</h3>
+                    <p>
+                        El préstamo subrogado es un tipo de préstamo que se otorga a clientes que ya tienen un préstamo por convenio que figure
+                        en sus boletas de pago como descuento. Este préstamo permite a los clientes consolidar sus deudas existentes
+                        en un solo préstamo, facilitando la gestión de pagos y, en muchos casos, ofreciendo condiciones más favorables.
+                    </p>
+                    <img src="../../imagenes/CompraDeuda.jpg" class="img-CompraDeuda">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="cuadro">
+                    <h3>Préstamo ampliado</h3>
+                    <p>
+                        Esta modalidad de préstamo por convenio es para financiar a clientes que ya cuentan con un préstamo por convenio vigente, el cual
+                        puede pasar por una nueva evaluación crediticia. El préstamo ampliado permite a los clientes obtener fondos adicionales
+                        más allá del monto original del préstamo, asimismo pueden utilizarlo para cancelar deudas existentes y disponer del remanente para otros fines.
+                    </p>
+                    <img src="../../imagenes/PrestamoAmpliado.jpg" class="img-PrestamoAmpliado">
+                </div>
+            </div>
+        </div>
+
+        <button class="flecha next">❯</button>
+
+    </div>
+    </section>
+
+    <hr>
+
     <section class="comparativa">
-    <h3 style="font-size: 24px; color: black; margin-bottom: 25px; text-align: center;">Comparativa de préstamos por convenio</h3>
+    <h3 style="font-size: 24px; color: white; margin-bottom: 25px; text-align: center;">Comparativa de préstamos por convenio</h3>
     <table border = "4" class="tabla-prestamos">
         <tr>
             <th>Tipo de préstamo</th>
@@ -111,13 +127,13 @@
     </table>
     </section>
 
+    <button class="MostrarConvenio">Ver Convenios Activos</button>
+
     <hr>
     <footer>
         <p>HAZ TUS SUEÑOS REALIDAD CON UN PRESTAMO POR CONVENIO</p>
         <p>&copy; 2025 Sektorista.</p>
     </footer>
-    
-        
     
 </body>
 </html>
