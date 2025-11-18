@@ -1,4 +1,4 @@
-/* ===================== GLOBAL ===================== */
+/* ============ ESTILOS GENERALES ============ */
 * {
   margin: 0;
   padding: 0;
@@ -7,20 +7,20 @@
 }
 
 body {
+  margin: 0;
   padding-top: 80px;
   line-height: 1.6;
   color: #333;
   background: url('../imagenes/fondo.jpeg') center/cover no-repeat fixed;
-  min-height: 100vh;
 }
 
-/* ===================== HEADER ===================== */
+/* ============ NAVBAR ============ */
 .header-nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   height: 82px;
+  width: 100%;
   background: #000815;
   padding: 1rem 2rem;
   z-index: 1000;
@@ -34,6 +34,7 @@ body {
 
 .contenido-logo {
   height: 50px;
+  width: 252px;
   cursor: pointer;
 }
 
@@ -279,3 +280,34 @@ footer p {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #eee;
+}
+
+img {
+    width: 80px;
+    height: auto;
+}
+
+#contenedorTabla {
+  display: none;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
