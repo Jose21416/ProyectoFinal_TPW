@@ -43,7 +43,8 @@
       </div>
     </div>
 
-    <!-- Donde trabajan -->
+       <!-- Donde trabajan -->
+
     <section class="instituciones">
       <h2>Instituciones que confían en nosotros</h2>
       <div class="instituciones-grid">
@@ -62,6 +63,7 @@
       </div>
     </section>
 
+
     <!-- Casos de éxito -->
     <section class="exito">
       <h2>Casos de Éxito</h2>
@@ -77,6 +79,7 @@
       </div>
     </section>
 
+
     <!-- Testimonios -->
     <section class="testimonios">
       <h2>Testimonios</h2>
@@ -91,6 +94,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- FAQ -->
     <section class="faq">
@@ -110,14 +114,17 @@
     </section>
 
     <!-- Blog -->
-    <section class="blog">
-      <h2>Artículos de Interés</h2>
-      <ul>
-        <h3><a href="#">💡 Consejos para mejorar tus finanzas personaless</h3>
-        <h3><a href="#">📊 Cómo preparar tu negocio para un préstamo</h3>
-        <h3><a href="#">🏦 Inversiones seguras para principiantes</h3>
-      </ul>
-    </section>
+<section class="blog">
+  <h2>Artículos de Interés</h2>
+  <ul>
+    <li><h3><a href="https://www.sbs.gob.pe/noticia/detallenoticia/idnoticia/3871" target="_blank">* Consejos para mejorar tus finanzas personales</a></h3></li>
+
+    <li><h3><a href="https://pqs.pe/tu-negocio/tips-si-vas-pedir-un-prestamo-bancario-para-tu-negocio/" target="_blank">* Cómo pedir un préstamo para tu negocio</a></h3></li>
+
+    <li><h3><a href="https://www.santanderconsumer.es/simplefinance/blog/economia-personal/ahorro/post/inversiones-seguras-para-principiantes" target="_blank">* Inversiones seguras para principiantes</a></h3></li>
+  </ul>
+</section>
+
  <div class="imagen-clientes">
   <img src="../../imagenes/clientes.jpg" class="sektorista-clientes">
 </div>
@@ -125,3 +132,25 @@
 </body>
 
 </html>
+
+<script>
+let pos = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(n) {
+  slides.forEach(s => s.classList.remove("active"));
+  slides[n].classList.add("active");
+}
+
+document.querySelector(".next").onclick = () => {
+  pos = (pos + 1) % slides.length;
+  showSlide(pos);
+};
+
+document.querySelector(".prev").onclick = () => {
+  pos = (pos - 1 + slides.length) % slides.length;
+  showSlide(pos);
+};
+
+showSlide(pos);
+</script>
