@@ -107,7 +107,7 @@ h2 {
   display: block;
   margin-top: 10px;
   font-weight: bold;
-  color: #555;
+  color: #555
 }
 
 .card:hover {
@@ -116,7 +116,7 @@ h2 {
   background: #fdfdfd;
 }
 .card:hover {
-  background-color: grey; 
+  background-color: rgb(152, 212, 255); 
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
