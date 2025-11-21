@@ -51,14 +51,18 @@ var instituciones = [
     },
 ];
 
-// Detectar el botón usando su class
 var boton = document.querySelector(".MostrarConvenio");
 
 boton.onclick = function () {
-    mostrarTabla();
+    var contenedor = document.getElementById("contenedorTabla");
+    
+    if (contenedor.style.display === "block") {
+        contenedor.style.display = "none";
+    } else {
+        mostrarTabla();
+    }
 };
 
-// Función que arma la tabla
 function mostrarTabla() {
     var contenedor = document.getElementById("contenedorTabla");
     contenedor.style.display = "block";
@@ -84,5 +88,39 @@ function mostrarTabla() {
     tabla += "</table>";
 
     contenedor.innerHTML = tabla;
+}
+
+var btnConfirmar = document.querySelector('.Guardar');
+
+if (btnConfirmar) {
+    btnConfirmar.addEventListener('click', function(e) {
+        e.preventDefault(); 
+
+        var checkboxes = document.querySelectorAll('.cbx input[type="checkbox"]');
+        var seleccionados = [];
+        var mensaje;
+
+        checkboxes.forEach(function(checkbox) {
+            if (checkbox.checked) {
+                seleccionados.push(checkbox.value); 
+            }
+        });
+
+        var cantidadSeleccionada = seleccionados.length;
+
+        if (cantidadSeleccionada === 1) {
+            var convenio = seleccionados[0];
+            mensaje = 'Institucion seleccionada:\n' + convenio;
+            alert(mensaje);
+            
+        } else if (cantidadSeleccionada > 1) {
+            mensaje = 'Solo seleccione una institucion';
+            alert(mensaje);
+            
+        } else {
+            mensaje = 'Por favor seleccione una institucion';
+            alert(mensaje);
+        }
+    });
 }
 
