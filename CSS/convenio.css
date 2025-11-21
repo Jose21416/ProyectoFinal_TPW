@@ -100,7 +100,6 @@ section h3 {
   border-radius: 12px;
 }
 
-/* --------------------- TÍTULO MODALIDADES --------------------- */
 .titulo-slide-secundario {
   font-size: 35px;
   color: white;
@@ -109,7 +108,6 @@ section h3 {
   font-weight: bold;
 }
 
-/* --------------------- GRID MODALIDADES --------------------- */
 .grid-modalidades {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -119,7 +117,6 @@ section h3 {
   padding: 0 20px;
 }
 
-/* El tercer bloque ocupa las 2 columnas y se centra */
 .grid-modalidades .cuadro-grid:nth-child(3) {
   grid-column: 1 / -1;
   max-width: 600px;
@@ -127,7 +124,6 @@ section h3 {
   width: 100%;
 }
 
-/* Cuadros individuales (bloques) */
 .cuadro-grid {
   background: white;
   border-radius: 10px;
@@ -157,7 +153,6 @@ section h3 {
   margin-bottom: 15px;
 }
 
-/* Imágenes dentro de los bloques */
 .cuadro-grid img {
   width: 60%;
   height: auto;
@@ -166,7 +161,6 @@ section h3 {
   border-radius: 8px;
 }
 
-/* ===================== TABLA ===================== */
 .tabla-prestamos {
   width: 80%;
   margin: 30px auto;
@@ -203,7 +197,6 @@ section h3 {
   background-color: #e7f0ff;
 }
 
-/* Contenedor de tabla */
 .tabla-container {
   background: white;
   padding: 20px;
@@ -212,7 +205,6 @@ section h3 {
   max-width: 90%;
 }
 
-/* ===================== FOOTER ===================== */
 footer {
   margin-top: 20px;
   background-color: #000033;
@@ -226,7 +218,6 @@ footer p {
   font-size: 1.2rem;
 }
 
-/* ===================== ANIMACIONES ===================== */
 @keyframes slideIn {
   to {
     opacity: 1;
@@ -288,7 +279,7 @@ img {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* ===================== RESPONSIVE ===================== */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .grid-modalidades {
     grid-template-columns: 1fr;
