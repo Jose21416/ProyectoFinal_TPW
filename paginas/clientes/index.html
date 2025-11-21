@@ -129,28 +129,9 @@
   <img src="../../imagenes/clientes.jpg" class="sektorista-clientes">
 </div>
 </div>
+
+
+
 </body>
 
 </html>
-
-<script>
-let pos = 0;
-const slides = document.querySelectorAll(".slide");
-
-function showSlide(n) {
-  slides.forEach(s => s.classList.remove("active"));
-  slides[n].classList.add("active");
-}
-
-document.querySelector(".next").onclick = () => {
-  pos = (pos + 1) % slides.length;
-  showSlide(pos);
-};
-
-document.querySelector(".prev").onclick = () => {
-  pos = (pos - 1 + slides.length) % slides.length;
-  showSlide(pos);
-};
-
-showSlide(pos);
-</script>
