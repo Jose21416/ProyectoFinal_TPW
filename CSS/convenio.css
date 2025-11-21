@@ -62,7 +62,7 @@ section h3 {
 .informacion {
   background-color: white;
   margin: 20px auto;
-  padding: 20px;
+  padding: 20px; 
   max-width: 900px;
   border-left: 6px solid black;
   border-radius: 8px;
@@ -102,7 +102,7 @@ section h3 {
 
 /* --------------------- TÍTULO MODALIDADES --------------------- */
 .titulo-slide-secundario {
-  font-size: 28px;
+  font-size: 35px;
   color: white;
   text-align: center;
   margin: 40px auto 30px;
@@ -309,3 +309,84 @@ img {
     width: 80%;
   }
 }
+
+.Guardar {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 20px auto;  
+}
+
+.Guardar:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cbx {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column; 
+    width: 300px;
+    margin: 0 30px; 
+}
+
+.opcion {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px; 
+}
+
+.opcion label {
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+}
+
+.opcion input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.opcion input[type="checkbox"]:checked {
+    background-color: #2680eb;
+    border-color: #2680eb;
+}
+
+.opcion input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    left: 4px;
+    top: -1px;
+}
+
+
+
+
