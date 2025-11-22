@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
         formulario.addEventListener('submit', function(evento) {
             evento.preventDefault();
 
-            // Captura de datos básicos
             const nombre = document.getElementById('fullname').value.trim();
             const correo = document.getElementById('email').value.trim();
             const telefono = document.getElementById('phone').value.trim();
