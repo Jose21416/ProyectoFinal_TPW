@@ -154,6 +154,7 @@ body {
   margin-bottom: 25px;
 }
 
+
 /* ====== CAMPOS ====== */
 
 form p {
@@ -243,4 +244,8 @@ button:active {
 .whatsapp-float img {
   width: 40px;
   height: 40px;
+}
+
+input[type="radio"] {
+  width: auto;
 }

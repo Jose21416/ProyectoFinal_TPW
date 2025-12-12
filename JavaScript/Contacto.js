@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkTerminos = document.getElementById('terminos');
     const linkTerminos = document.getElementById('linkTerminos');
 
-
     if (linkTerminos && checkTerminos) {
         linkTerminos.addEventListener('click', function(e) {
             e.preventDefault();
@@ -57,64 +56,81 @@ document.addEventListener('DOMContentLoaded', function() {
             const telefono = document.getElementById('phone').value.trim();
             const mensaje = document.getElementById('message').value.trim();
 
+            // --- NUEVOS CAMPOS ---
+            const preferencia = document.querySelector('input[name="preferencia"]:checked');
+            const motivo = document.getElementById('motivo').value;
+
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-
+            // --- VALIDACIONES ---
             if (nombre.length < 3) {
                 alert('Por favor, escribe un nombre válido (mínimo 3 letras).');
-            
+                return;
+
             } else if (!/^\d+$/.test(telefono)) {
                 alert('El celular solo debe contener números.');
-            
+                return;
+
             } else if (telefono.length < 9) {
                 alert('El número de celular debe tener al menos 9 dígitos.');
-            
+                return;
+
             } else if (!emailRegex.test(correo)) {
-                alert('Por favor, ingresa una dirección de correo válida.');
-            
+                alert('Por favor, ingresa un correo válido.');
+                return;
+
+            } else if (!preferencia) {
+                alert('Selecciona tu preferencia de contacto.');
+                return;
+
+            } else if (motivo === "") {
+                alert('Selecciona un motivo de contacto.');
+                return;
+
             } else if (mensaje === "") {
-                alert('El campo de mensaje no puede estar vacío.');
+                alert('El campo mensaje no puede estar vacío.');
+                return;
 
             } else if (!checkTerminos.checked) {
-                alert('Debes leer la Política de Privacidad y marcar la casilla para continuar.');
-            
-            } else {
-                
-                const nuevoRegistro = {
-                    id: baseDeDatos.length + 1,
-                    nombre: nombre,
-                    correo: correo,
-                    telefono: telefono,
-                    mensaje: mensaje,
-                    terminosAceptados: true, 
-                    fecha: new Date().toLocaleString()
-                };
-
-                baseDeDatos.push(nuevoRegistro);
-
-       
-                console.clear();
-                console.log("Formulario enviado correctamente.");
-                console.table(baseDeDatos);
-
-                if (divResultado) {
-                    divResultado.style.display = 'block';
-                    divResultado.innerHTML = `
-                        <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin-top: 15px; border: 1px solid #4caf50;">
-                            <h4 style="color: #2e7d32; margin-top:0;">Enviado Exitosamente</h4>
-                            <p>Gracias <strong>${nombre}</strong>, hemos recibido tu mensaje.</p>
-                        </div>
-                    `;
-                }
-
-                alert("Datos guardados correctamente.");
-                
-                formulario.reset();
-                
-
-                checkTerminos.checked = false;
-                checkTerminos.disabled = true;
+                alert('Debes aceptar la Política de Privacidad.');
+                return;
             }
+
+            // --- REGISTRO A GUARDAR ---
+            const nuevoRegistro = {
+                id: baseDeDatos.length + 1,
+                nombre: nombre,
+                correo: correo,
+                telefono: telefono,
+                preferencia: preferencia.value,
+                motivo: motivo,
+                mensaje: mensaje,
+                terminosAceptados: true,
+                fecha: new Date().toLocaleString()
+            };
+
+            baseDeDatos.push(nuevoRegistro);
+
+            console.clear();
+            console.log("Formulario enviado correctamente.");
+            console.table(baseDeDatos);
+
+            if (divResultado) {
+                divResultado.style.display = 'block';
+                divResultado.innerHTML = `
+                    <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin-top: 15px; border: 1px solid #4caf50;">
+                        <h4 style="color: #2e7d32; margin-top:0;">Enviado Exitosamente</h4>
+                        <p>Gracias <strong>${nombre}</strong>, hemos recibido tu mensaje.</p>
+                    </div>
+                `;
+            }
+
+            alert("Datos guardados correctamente.");
+
+            formulario.reset();
+
+            checkTerminos.checked = false;
+            checkTerminos.disabled = true;
         });
     }
 });

@@ -1,128 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contáctanos</title>
-    <link rel="stylesheet" href="../../css/contacto.css" />
-    <link rel="icon" href="../../imagenes/loan.png" type="image/png" />
-  </head>
 
-  <body>
-    <!-------HEADER-------->
-    <header>
-      <nav class="header-nav">
-        <div class="content">
-          <a class="button-logo" href="../../index.html">
-            <img
-              class="contenido-logo"
-              src="../../imagenes/logosinfondo.png"
-              alt="Sektorista"
-            />
-          </a>
-          <a class="button" href="../clientes/index.html">Clientes</a>
-          <a class="button" href="../contacto/index.html">Contáctanos</a>
-          <a class="button" href="../convenio/index.html">Convenios</a>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contáctanos</title>
+  <link rel="stylesheet" href="../../css/contacto.css" />
+  <link rel="icon" href="../../imagenes/loan.png" type="image/png" />
+</head>
 
-    <main class="contenido-ayudaycontacto">
-      <div class="contenido-ayudaycontacto-contenedor">
-        <h1 class="contenido-ayudaycontacto-titulo">
-          ¿Necesitas ayuda o quieres hablar con nosotros?
-        </h1>
-        <p class="contenido-ayudaycontacto-resumen">
-          Aquí podrás encontrar nuestra ubicación, así como los medios de
-          contacto directo, incluyendo WhatsApp, para que nos escribas
-          fácilmente y te brindemos el soporte que necesitas.
+<body>
+  <!-------HEADER-------->
+  <header>
+    <nav class="header-nav">
+      <div class="content">
+        <a class="button-logo" href="../../index.html">
+          <img class="contenido-logo" src="../../imagenes/logosinfondo.png" alt="Sektorista" />
+        </a>
+        <a class="button" href="../clientes/index.html">Clientes</a>
+        <a class="button" href="../contacto/index.html">Contáctanos</a>
+        <a class="button" href="../convenio/index.html">Convenios</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contenido-ayudaycontacto">
+    <div class="contenido-ayudaycontacto-contenedor">
+      <h1 class="contenido-ayudaycontacto-titulo">
+        ¿Necesitas ayuda o quieres hablar con nosotros?
+      </h1>
+      <p class="contenido-ayudaycontacto-resumen">
+        Aquí podrás encontrar nuestra ubicación, así como los medios de
+        contacto directo, incluyendo WhatsApp, para que nos escribas
+        fácilmente y te brindemos el soporte que necesitas.
+      </p>
+    </div>
+  </main>
+  <section class="ubicacion">
+    <h3 class="ubicacion-titulo">Punto de Atención</h3>
+    <div class="ubicacion-mapa">
+      <!-- Google Maps -->
+      <div id="map"></div>
+      <!-- Tarjeta flotante -->
+      <aside class="info-card">
+        <h2>Oficina</h2>
+        <p>Av. Las Begonias N° 415, Lima</p>
+        <p>L a V: 9:00am - 6:00pm/Sab: 9:00am - 1:00pm</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=-12.092039355985108,-77.02400398467609" target="_blank"
+          class="btn">Cómo llegar</a>
+      </aside>
+    </div>
+  </section>
+  <section class="formulario">
+    <div class="formulario-contacto">
+      <h3>Completar formulario</h3>
+
+      <form id="miFormulario">
+        <p>
+          <label>Nombre y Apellido</label>
+          <input type="text" name="fullname" id="fullname" required />
         </p>
-      </div>
-    </main>
-    <section class="ubicacion">
-      <h3 class="ubicacion-titulo">Punto de Atención</h3>
-      <div class="ubicacion-mapa">
-        <!-- Google Maps -->
-        <div id="map"></div>
-        <script
-          async
-          defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCapKLGiounqVHQUyNZ9eaEduuny4cm3h0&callback=initMap"
-        ></script>
-        <!-- Tarjeta flotante -->
-        <aside class="info-card">
-          <h2>Oficina</h2>
-          <p>Av. Las Begonias N° 415, Lima</p>
-          <p>L a V: 9:00am - 6:00pm/Sab: 9:00am - 1:00pm</p>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=-12.092039355985108,-77.02400398467609"
-            target="_blank"
-            class="btn"
-            >Cómo llegar</a
-          >
-        </aside>
-      </div>
-    </section>
-    <section class="formulario">
-      <div class="formulario-contacto">
-        <h3>Completar formulario</h3>
 
-        <form id="miFormulario">
-          <p>
-            <label>Nombre y Apellido</label>
-            <input type="text" name="fullname" id="fullname" required />
-          </p>
-          <p>
-            <label>Correo</label>
-            <input type="email" name="email" id="email" required />
-          </p>
-          <p>
-            <label>Número de celular</label>
-            <input type="number" name="phone" id="phone" required />
-          </p>
-          <p class="block">
-            <label>Mensaje</label>
-            <textarea name="message" id="message" rows="3" required></textarea>
-          </p>
-          <div
-            style="
+        <p>
+          <label>Correo</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+
+        <p>
+          <label>Número de celular</label>
+          <input type="number" name="phone" id="phone" required />
+        </p>
+
+        <p>
+          <label>Preferencia de contacto:</label>
+
+          <label>
+            <input type="radio" name="preferencia" value="telefono" />
+            Teléfono</label><br />
+
+          <label>
+            <input type="radio" name="preferencia" value="correo" />
+            Correo</label>
+        </p>
+
+        <p>
+          <label for="motivo">Motivo de contacto:</label>
+          <select name="motivo" id="motivo" required>
+            <option value="">-- Seleccione --</option>
+            <option value="consulta">Consulta</option>
+            <option value="soporte">Soporte Técnico</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="otro">Otro</option>
+          </select>
+        </p>
+
+        <p class="block">
+          <label>Mensaje</label>
+          <textarea name="message" id="message" rows="3" required></textarea>
+        </p>
+
+        <div style="
               display: flex;
               align-items: center;
               gap: 10px;
               margin-bottom: 20px;
-            "
-          >
-            <input
-              type="checkbox"
-              id="terminos"
-              name="terminos"
-              style="width: auto; margin: 0"
-              disabled
-            />
+            ">
+          <input type="checkbox" id="terminos" name="terminos" style="width: auto; margin: 0" disabled />
 
-            <label for="terminos" style="margin: 0; text-align: left">
-              He leído y acepto la
-              <a href="#" id="linkTerminos">Política de Privacidad</a>.
-            </label>
-          </div>
-          <p class="block">
-            <button type="submit">ENVIAR</button>
-          </p>
-        </form>
+          <label for="terminos" style="margin: 0; text-align: left">
+            He leído y acepto la
+            <a href="#" id="linkTerminos">Política de Privacidad</a>.
+          </label>
+        </div>
 
-        <div id="resultado"></div>
-      </div>
-    </section>
+        <p class="block">
+          <button type="submit">ENVIAR</button>
+        </p>
+      </form>
 
-    <script src="../../JavaScript/Contacto.js?v=1.0"></script>
+      <div id="resultado"></div>
+    </div>
+  </section>
 
-    <a
-      href="https://wa.me/51924554927?text=Hola,%20necesito%20más%20información"
-      class="whatsapp-float"
-      target="_blank"
-      aria-label="Chatea con nosotros por WhatsApp"
-    >
-      <img src="../../imagenes/social.png" alt="WhatsApp" />
-    </a>
-  </body>
+  <a href="https://wa.me/51924554927?text=Hola,%20necesito%20más%20información" class="whatsapp-float" target="_blank"
+    aria-label="Chatea con nosotros por WhatsApp">
+    <img src="../../imagenes/social.png" alt="WhatsApp" />
+  </a>
+</body>
+<script src="../../JavaScript/Contacto.js?v=1.0"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCapKLGiounqVHQUyNZ9eaEduuny4cm3h0&callback=initMap"></script>
+
 </html>
